@@ -169,9 +169,9 @@ Compares the average salary across different age groups to observe how earnings 
   long-term contracts, but age alone doesn't explain most of the variation in pay.
 - **Height and Weight are strongly correlated (r ≈ 0.83)** — unsurprising,
   since taller athletes generally carry more mass.
-- **Centers (C) earn the most on average (~$5.97M)**, followed by Point
-  Guards (~$4.98M), Small Forwards (~$4.83M), Power Forwards (~$4.51M), and
-  Shooting Guards (~$3.98M) in this dataset.
+- **Centers (C) earn the most on average ($5.97M)**, followed by Point
+  Guards ($4.98M), Small Forwards ($4.83M), Power Forwards ($4.51M), and
+  Shooting Guards ($3.98M) in this dataset.
 - **The Cleveland Cavaliers, LA Clippers, and Oklahoma City Thunder** had the
   three highest total team payrolls in this snapshot of the data.
 
