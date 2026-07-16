@@ -51,7 +51,8 @@ understanding the project:
 ```
 nba-eda-project/
 ├── NBA_EDA.ipynb          # Main analysis notebook (all code + charts + explanations)
-├── nba.csv                # Raw dataset
+├── Data
+│   ├── nba.csv            # Raw dataset
 ├── images/                # Exported chart images (also embedded in the notebook)
 │   ├── 01_univariate_distributions.png
 │   ├── 02_players_per_team.png
