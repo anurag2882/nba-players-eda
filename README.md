@@ -1,8 +1,8 @@
 # NBA Players — Exploratory Data Analysis (EDA)
 
-A beginner-to-intermediate data analysis project exploring a dataset of NBA
-players, built using **only NumPy, Pandas, and Matplotlib** (no Seaborn,
-Plotly, or scikit-learn).
+A beginner-to-intermediate Exploratory Data Analysis (EDA) project on an NBA players dataset using Python, NumPy, Pandas, and Matplotlib.
+
+The project focuses on data cleaning, statistical analysis, visualization, and extracting meaningful insights from player and team data.
 
 ## What this project does
 
@@ -15,6 +15,24 @@ height, weight, college, salary) and answers real questions about the league:
 - Is there a relationship between a player's age and their salary?
 - Is there a relationship between height and weight?
 - Which colleges send the most players to the NBA?
+
+## Dataset
+
+Source: GeeksforGeeks – NBA Dataset (nba.csv)
+
+- Rows: 458
+- Columns: 9
+
+Features:
+- Name
+- Team
+- Number
+- Position
+- Age
+- Height
+- Weight
+- College
+- Salary
 
 ## Why this dataset needed cleaning
 
@@ -31,10 +49,9 @@ understanding the project:
 ## Project structure
 
 ```
-nba_eda_project/
-├── NBA_EDA.ipynb        # Main analysis notebook (all code + charts + explanations)
-├── data/
-│   └── nba.csv           # Raw dataset
+nba-eda-project/
+├── NBA_EDA.ipynb          # Main analysis notebook (all code + charts + explanations)
+├── nba.csv                # Raw dataset
 ├── images/                # Exported chart images (also embedded in the notebook)
 │   ├── 01_univariate_distributions.png
 │   ├── 02_players_per_team.png
@@ -48,6 +65,80 @@ nba_eda_project/
 ├── requirements.txt
 └── README.md
 ```
+
+## 📊 Visualizations
+
+The following visualizations were created using **Matplotlib** to explore player demographics, salary distribution, team composition, positional analysis, and relationships between numerical variables. These charts highlight the key findings of the exploratory data analysis.
+
+### 1. Distribution of Age, Height, Weight, and Salary
+
+![Distribution](images/01_univariate_distributions.png)
+
+Shows the distribution of the four numerical variables. Salary is highly right-skewed, while age, height, and weight have more balanced distributions.
+
+---
+
+### 2. Players per Team
+
+![Players per Team](images/02_players_per_team.png)
+
+Compares the number of players on each NBA team in the dataset.
+
+---
+
+### 3. Players by Position
+
+![Players by Position](images/03_players_per_position.png)
+
+Displays the number of players at each playing position.
+
+---
+
+### 4. Top Colleges Producing NBA Players
+
+![Top Colleges](images/04_top_colleges.png)
+
+Shows which colleges have produced the highest number of NBA players in this dataset.
+
+---
+
+### 5. Age vs Salary
+
+![Age vs Salary](images/05_age_vs_salary.png)
+
+Illustrates the relationship between a player's age and salary. The trend suggests a weak positive correlation.
+
+---
+
+### 6. Height vs Weight
+
+![Height vs Weight](images/06_height_vs_weight.png)
+
+Demonstrates a strong positive relationship between height and weight.
+
+---
+
+### 7. Average Salary by Position
+
+![Average Salary by Position](images/07_avg_salary_by_position.png)
+
+Compares the average salary earned by players in different positions.
+
+---
+
+### 8. Team Payroll
+
+![Top Team Payroll](images/08_top_team_payroll.png)
+
+Shows the teams with the highest total payroll based on player salaries.
+
+---
+
+### 9. Average Salary by Age Group
+
+![Salary by Age Group](images/09_salary_by_age_group.png)
+
+Compares the average salary across different age groups to observe how earnings vary with age.
 
 ## How the analysis is organized (the notebook's 6 sections)
 
@@ -83,21 +174,7 @@ nba_eda_project/
 - **The Cleveland Cavaliers, LA Clippers, and Oklahoma City Thunder** had the
   three highest total team payrolls in this snapshot of the data.
 
-*(Numbers are from this specific dataset snapshot — re-running the notebook
-will reproduce them exactly.)*
 
-## How to explain this project if someone asks
-
-A simple way to describe it in conversation:
-
-> "I took a dataset of NBA players and cleaned it up — handling missing
-> salaries and college info, and converting height from feet-inches text
-> into a usable number. Then I explored it with NumPy and Pandas: looked at
-> how age, height, weight, and salary are distributed, compared teams and
-> positions, and used correlation to check whether age predicts salary and
-> whether height predicts weight. I visualized everything with Matplotlib.
-> The main takeaway was that salary is very skewed by a few star players,
-> and that centers earn the most on average by position."
 
 ## How to run it
 
@@ -111,3 +188,4 @@ jupyter notebook NBA_EDA.ipynb
 - **Pandas** — loading, cleaning, grouping, aggregating tabular data
 - **NumPy** — numeric array operations, manual statistics, correlation
 - **Matplotlib** — all charts (histograms, bar charts, scatter plots)
+- **Jupyter Notebook** – Interactive development environment
